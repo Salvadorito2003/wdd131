@@ -4,20 +4,20 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 section.header_content {
-    padding: 15px;
     height: 100px;
     color: white;
     background-color: rgb(89, 89, 89);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 ul {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: black;
     color: black;
     justify-content: space-around;
-    padding: 20px
+    padding: 20px;
 }
 
 a {
@@ -27,17 +27,15 @@ a {
 div {
     height: 300px;
     display: grid;
-    grid-template: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template: 300px / auto 500px;
 }
 section.main_content {
     background-color: rgb(177, 175, 175);
-    grid-column: 1 / 6;
     padding: 15px;
 }
 section.aside_content {
     background-color: white;
     padding: 15px;
-    grid-column: 6/ 8;
 }
 
 section.footer_content {
