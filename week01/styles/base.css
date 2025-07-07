@@ -1,0 +1,10 @@
+.course-title {
+    background-color: rgba(189, 189, 0, 0.745);
+    font-size: 20px;
+}
+
+ul{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
