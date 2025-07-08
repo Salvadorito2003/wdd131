@@ -1,4 +1,4 @@
-=<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,13 +7,16 @@
     <meta name="author" content="Tobias Aguilar">
     <Meta name="Description" content="WDD 131 - Dynamic Web Fundamentals | Tobias Aguilar | About me page.">
     <link rel="stylesheet" href="styles/base.css">
+
+    <script src="scripts/getdates.js" defer></script>
+
 </head>
 <body>
     <header>
         <h1 class="course-title">WDD 131: Dynamic Web Fundamentals |<span id="course-title" class="course-title" content=" WDD 131 - Dynamic Web Fundamentals" style="color:white">Tobias Aguilar</span></h1>
         <nav>
             <ul>
-                <li><a href="www.linkedin.com/in/aguilar-tobias-sj" title="linked-in">Linked In </a></li>
+                <li><a href="https://www.linkedin.com/in/aguilar-tobias-sj" title="linked-in">Linked In </a></li>
                 <li><a href="https://byupw.instructure.com/." title="canvas">Canvas</a></li>
                 <li><a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/61?lang=eng" title="favorite-scripture">Favorite Scripture</a></li>
                 <li><a href="" title="final-project">Final Project</a></li>
@@ -25,21 +28,25 @@
         <section class="card">
             <h2>About me</h2>
             <img src="images/tobias-aguilar.webp" title="Tobias Aguilar">
-            <p></p>
+            <p>
+                My name is Tobias, I am from a small city in the province of Buenos Aires, Argentina, called Pergamino.
+                I have a family of 9 people. my dad, my step mom and 6 siblings besides me. I am the 2nd youngest. 
+                Being 22 years old now. I am studying and trying to build a good future to get a family too.
+            </p>
         </section>
         <section class="card">
             <h2>Buenos Aires, Argentina</h2>
             <img src="images/pergamino.webp" title="Pergamino, Buenos Aires">
-            <p></p>
+            <p>
+                Pergamino is a calm city. It is one of the three cities that conform the "nucleo", as it is 
+                called here in Argentina. With Salto, Buenos Aires; and Rosario, Santa Fe. It is the "nucleo"
+                because of the rich ground to grow soy, one of the main exports of our country.
+            </p>
         </section>
     </main>
     <footer>
-        <p>
-            © | <span id="currentyear"></span>
-            Tobias Aguilar
-            Buenos Aires, Argentina
-        </p>
-        <p id="lastModified"></p>
+        <p><span id="currentyear"></span> | Tobias Aguilar | Buenos Aires, Argentina</p>
+        <p id="lastmodified"></p>
 
     </footer>
 </body>
