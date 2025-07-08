@@ -64,6 +64,9 @@ main {
     grid-template: 80px / auto auto;
     border-radius: 10px;
     background-color: rgba(128, 128, 128, 0.529);
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 h1.name {
     padding: 10px;
