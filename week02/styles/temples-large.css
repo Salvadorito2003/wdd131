@@ -1,0 +1,10 @@
+@media screen and (min-width: 500px)
+{
+    header {
+        background-color: rgb(245, 245, 0);
+    }
+
+    .figures {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
