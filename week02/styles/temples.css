@@ -1,8 +1,7 @@
 
 * {
     font-family: "Roboto", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 1rem;
+    font-weight: 400;
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
@@ -21,6 +20,7 @@ header {
     text-align: center;
     font-size: 20px;
     flex-wrap: wrap;
+    border-radius: 10px;
 }
 
 header p {
@@ -62,12 +62,55 @@ main {
     margin-left: auto;
     margin-right: auto;
 }
-@media (max-width: 500px) {
+img {
+    border-radius: 10px;
+    border: 1px solid white;
+}
+@media (max-width: 600px) {
         .figures {
         grid-template-columns: 1fr !important;
-    }
+        }
+        #menu {
+	    font-size: 1.5rem;
+	    border: 0;
+	    background: none;
+	    color: #000;
+ 	    position: absolute;
+	    margin-top: auto;
+	    margin-right: auto;
+        }
+
+        #menu::before {
+	    content: "☰";
+        }
+
+        #menu.open::before {
+	    content: "X";
+        }
+
+        .open a {
+	    display: block;
+        }
+        a {
+            display:none;
+        }
+}
+
+@media (min-width: 600px) {
+    #menu {
+	display: none; 
+	}
 }
 
 body {
     background-color: gray;
 }
+
+footer {
+    background-color: rgb(245, 245, 0);
+    text-align: center;
+    padding: 1px;
+    font-weight: 500;
+    border-radius: 10px;
+}
+
