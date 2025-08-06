@@ -34,8 +34,8 @@ main {
 footer {
     margin-top: 0px;
 }
-.large {
-    display: none;
+.weather-title::after {
+    content: "";
 }
 @media screen and (min-width: 1000px)
 {
@@ -64,10 +64,7 @@ footer {
         font-size: 25px;
         border-radius: 10px;
     }
-    .small {
-        display: none;
-    }
-    .large {
-        display:block;
+    .weather-title::after {
+        content: " ⛅";
     }
 }
