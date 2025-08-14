@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            border: 2px solid rgb(200,200,200);
+            font-size: 0.8rem;
+        }
+        thead th {
+            padding: 15px;
+        }
+        thead, #blackcolumn {
+            background-color: black;
+            color: white;
+            font-size: 20px;
+        }
+        #columns {
+            background-color: rgb(47, 47, 47);
+        }
+        tbody tr {
+            text-align: center;
+            
+        }
+        tbody td {
+            font-weight: 600;
+            padding:5px;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #e0e0e0;
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Practice Table</h1>
+    <table>
+        <caption>Table 1: Account Feature Comparison</caption>
+        <thead>
+            <tr>
+                <th colspan="4" scope="colgroup">ACME Wildest Services</th>
+            </tr>
+            <tr id="columns">
+                <th scope="col" id="blackcolumn"></th>
+                <th scope="col">Basic</th>
+                <th scope="col">Premium</th>
+                <th scope="col">Deluxe</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Feature 1</td>
+                <td>✔️</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <td>Feature 2</td>
+                <td>❌</td>
+                <td>✔️</td>
+                <td>✔️</td>
+            </tr>
+            <tr>
+                <td>Feature 3</td>
+                <td>❌</td>
+                <td>❌</td>
+                <td>✔️</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
