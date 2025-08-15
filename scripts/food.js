@@ -33,20 +33,44 @@ if (!typical_foods) {
         foodName: "Choripan",
         description: "Grilled chorizo sausage served in a crusty bread roll, often a baguette",
         imageUrl: "images/choripan.jpg",
-        recipe: ""
+        recipe: `Step 1: Prepare the grill. Preheat your grill or barbecue to medium-high heat. Make sure the grates are clean and lightly oiled to prevent sticking.
+
+            Step 2: Grill the chorizo. Place the chorizo sausages on the grill and cook for about 8-10 minutes, turning occasionally, until they are browned and cooked through.
+
+            Step 3: Prepare the bread. While the chorizo is grilling, slice the bread rolls open lengthwise, leaving a hinge so they stay together.
+
+            Step 4: Assemble the choripán. Place the grilled chorizo inside the bread roll. Optionally, add toppings like chimichurri sauce, salsa criolla, or your favorite condiments.
+
+            Step 5: Serve. Serve immediately while hot. Enjoy your choripán as a snack or meal!`
     },
     {
         foodName: "Asado",
         description: "South American barbecue",
         imageUrl: "images/asado.jpg",
-        recipe: ""
+        recipe: `Step 1: Prepare the grill. Light charcoal or wood in a parrilla (grill) and let it burn until you have medium-hot embers. Spread the coals evenly.
+
+            Step 2: Prepare the meat. Season beef ribs, short ribs, flank steak, sausages, and other cuts with coarse salt. Some cuts can be lightly brushed with oil, but the traditional method is just salt.
+
+            Step 3: Grill the meat. Place the meat on the grill over indirect heat for larger cuts or direct heat for sausages. Cook slowly to allow even cooking and smoke flavor. Turn occasionally.
+
+            Step 4: Check doneness. Meat should be tender, juicy, and slightly charred on the outside. Sausages should be fully cooked and slightly crispy.
+
+            Step 5: Serve. Slice the meat and serve hot with classic accompaniments like chimichurri sauce, grilled vegetables, and crusty bread. Enjoy the asado with family and friends!`
     },
     {
         foodName: "Empanadas",
         description: "Hand-sized, savory pastries, typically baked or fried, and filled with a variety of ingredients like meat, cheese, or vegetables. ",
         imageUrl: "images/empanadas.jpg",
-        recipe: ""
-    },
+        recipe: `Step 1: Prepare the filling. In a pan, heat some oil and sauté 1 chopped onion until translucent. Add 250g of minced beef (or chicken) and cook until browned. Season with salt, pepper, paprika, and a pinch of cumin. Optional: add chopped boiled eggs, olives, or raisins.
+
+            Step 2: Prepare the dough. Use store-bought empanada dough discs or make your own. Keep the discs covered to prevent drying out.
+
+            Step 3: Fill the empanadas. Place a spoonful of filling in the center of each dough disc. Fold the dough over to form a half-moon shape and press the edges with a fork to seal.
+
+            Step 4: Cook the empanadas. For baked empanadas, preheat the oven to 200°C (390°F), brush the empanadas with an egg wash, and bake for 20–25 minutes until golden. For fried empanadas, heat oil in a deep pan and fry until golden brown, then drain on paper towels.
+
+            Step 5: Serve. Let them cool slightly before serving. Enjoy your empanadas warm as a snack or appetizer!`
+    }
     ];
     localStorage.setItem("typical_foods", JSON.stringify(typical_foods));
 };
@@ -91,12 +115,12 @@ function createFoodRecipeCard (food) {
     img.src = food.imageUrl;
     img.alt = food.foodName;
     const recipe = document.createElement("p");
-    recipe.textContent = food.recipe || "No recipe available.";
+    recipe.textContent = food.recipe;
 
     recipeContainer.appendChild(title);
     recipeContainer.appendChild(img);
     
-    const steps = (food.recipe || "No recipe available.").split("\n");
+    const steps = (food.recipe).split("\n");
     steps.forEach(step => {
         const p = document.createElement("p");
         p.textContent = step.trim();
