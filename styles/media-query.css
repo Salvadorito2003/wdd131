@@ -1,0 +1,28 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+header, main, footer {
+    margin: 1rem auto;
+    border-radius: 10px;
+    max-width: 640px;
+    text-align: justify;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.655);
+}
+
+main {
+    display: grid;
+    grid-gap: 1rem;
+    font-size: 18px;
+    grid-template-columns: auto;
+}
+
+section {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(96, 227, 60);
+}

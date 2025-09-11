@@ -1,0 +1,8 @@
+@media screen and (min-width: 500px)
+{
+
+    .figures {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
