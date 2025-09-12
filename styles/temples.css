@@ -30,13 +30,6 @@ header p, a {
     color: black;
     text-decoration: none;
 }
-nav ul {
-    display:flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 header a {
     border: 2px solid black;
     padding-bottom: 5px;
@@ -48,6 +41,13 @@ header a:hover {
     background-color: gray;
     color: white;
     text-decoration: underline;
+}
+nav ul {
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 main {
@@ -103,7 +103,7 @@ img {
 }
 
 body {
-    background-color: gray;
+    background-color: rgb(149, 109, 116);
 }
 
 footer {
