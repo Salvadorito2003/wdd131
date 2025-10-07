@@ -15,7 +15,7 @@ lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
 const container = document.querySelector("#provinces");
 
 let provinces = JSON.parse(localStorage.getItem("provinces"));
-if (provinces) {
+if (!provinces) {
   provinces = [
     {
       provinceName: "Buenos Aires",
