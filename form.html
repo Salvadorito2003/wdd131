@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobias Aguilar's Form</title>
+    <meta name="author" content="Tobias Aguilar">
+    <meta name="description" content="Practicing forms for WDD131 Week 5 activity">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home Page</a></li>
+                <li class="active"><a href="form.html">Product Review</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Product Review</h1>
+        <form method="get" action="review.html">
+            <fieldset>
+                <legend>Product Name *</legend>
+                <label id="product-name">
+                    <select id="product" name="select-product" required>
+                        <option value="" selected disabled>Choose a product...</option>
+                    <!--<option value="notebook">Notebook HP 15</option>
+                    <option value="tv">Smart TV 60in</option>
+                    <option value="microwave">Microwave SANYO</option>
+                    <option value="phone">Samsung S22</option>
+                    <option value="refrigerator">Refrigerator WestingHouse</option>-->
+                    </select>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Overall Rating *</legend>
+                <div id="overall-rating">
+                    <label><input type="radio" name="rating" value="1-star" required>☆</label>
+                    <label><input type="radio" name="rating" value="2-star" required>☆☆</label>
+                    <label><input type="radio" name="rating" value="3-star" required>☆☆☆</label>
+                    <label><input type="radio" name="rating" value="4-star" required>☆☆☆☆</label>
+                    <label><input type="radio" name="rating" value="5-star" required>☆☆☆☆☆</label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Purchase Date (Optional)</legend>
+                <label id="purchase-date"><input type="date" name="purchase-date"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Useful Features (Optional)</legend>
+                <label id="durability"><input type="checkbox" name="features" value="durability">Durability</label>
+                <label id="ease-utilization"><input type="checkbox" name="features" value="ease-utilization">Ease of use</label>
+                <label id="performance"><input type="checkbox" name="features" value="performance">Performance</label>
+                <label id="design"><input type="checkbox" name="features" value="design">Design</label>
+            </fieldset>
+            <fieldset>
+                <legend>Written Review (Optional)</legend>
+                <textarea></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>User Name (Optional)</legend>
+                <label><input type="text" id="user-name" name="user-name"></label>
+            </fieldset>
+            <input type="submit" value="Send my Review">
+        </form>
+    </main>
+    <footer>
+        <p><span id="currentyear"></span> | Tobias Salvador Joaquin Aguilar | Buenos Aires, Argentina</p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>
