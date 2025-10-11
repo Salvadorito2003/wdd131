@@ -15,7 +15,7 @@ lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
 
 const container = document.getElementById("temple-container");
 let temples = JSON.parse(localStorage.getItem("temples"));
-if (!temples) {
+if (temples) {
     temples = [
   {
   templeName: "Mendoza Argentina Temple",
@@ -48,6 +48,27 @@ if (!temples) {
     area: 19000,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/bahia-blanca-argentina-temple/bahia-blanca-argentina-temple-60881.jpg"
+  },
+  {
+  templeName: "Salta Argentina Temple",
+    location: "Salta, salta, Argentina",
+    dedicated: "2025, Jun, 16",
+    area: 27000,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/salta-argentina-temple/salta-argentina-temple-48253.jpg"
+  },
+  {
+  templeName: "Buenos Aires City Center Argentina Temple",
+    location: "Buenos Aires, Buenos Aires, Argentina",
+    dedicated: "Under Construction",
+    area: 67900,
+    imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/buenos-aires-city-center-argentina-temple/buenos-aires-city-center-argentina-temple-61078-main.jpg"
+  },
+  {
+  templeName: "Rosario Argentina Temple",
+    location: "Rosario, Santa Fe, Argentina",
+    dedicated: "Under Planning and Design",
+    area: "",
+    imageUrl: ""
   }
   ];
   localStorage.setItem("temples", JSON.stringify(temples));
